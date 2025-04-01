@@ -1,0 +1,30 @@
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid #f0f2f4;
+    padding: 12px 40px;
+    
+}
+  
+.sticky-header.header-hidden {
+    transform: translateY(-100%);
+}
+
+body {
+    padding-top: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+}
+
+section, [id] {
+    scroll-margin-top: 0px; 
+}
